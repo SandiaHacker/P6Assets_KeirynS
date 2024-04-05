@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P6Assets_KeirynS.Views.UseerSignUpPage"
+             Title="UseerSignUpPage">
+    <VerticalStackLayout Padding="20">
+
+        
+        <Entry x:Name="TxtUsername" Placeholder="Usarname/Email" Margin="0, 5, 0, 5" />
+        <Entry x:Name="TxtCartId" Placeholder="Cart ID" Margin="0, 5, 0, 5" />
+        <Entry x:Name="TxtFirstname" Placeholder="First Name" Margin="0, 5, 0, 5" />
+        <Entry x:Name="TxtLastname" Placeholder="Last Name" Margin="0, 5, 0, 5" />
+        <Entry x:Name="TxtPhonenumber" Placeholder="Phone Number" Margin="0, 5, 0, 5" />
+
+        <Editor x:Name="TxtAddress" Placeholder="Address" Margin="0, 5, 0, 5" />
+
+        <Entry x:Name="TxtPassword" Placeholder="Password" Margin="0, 5, 0, 5" />
+
+        <Button x:Name="BtnAdd" Text="ADD" Margin="0, 20, 0, 5" Clicked="BtnAdd_Clicked"/>
+        <Button x:Name="BtnCancel" Text="CANCEL" Margin="0, 20, 0, 5" Clicked="BtnCancel_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>
