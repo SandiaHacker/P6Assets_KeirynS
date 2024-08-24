@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P6Assets_KeirynS.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="logindep">
+             
+    <VerticalStackLayout VerticalOptions="Center" Padding="20, 0, 20, 0">
+
+        <Image x:Name="depiconproy" Source="depicon" HeightRequest="150" />
+
+        <Entry x:Name="TxtEmail" Placeholder="Email..." FontSize="20" Keyboard="Email" />
+
+        <Entry x:Name="TxtPassword" Placeholder="Password..." FontSize="20" Keyboard="Text" IsPassword="True" />
+        <Switch x:Name="SwVerPassword" IsToggled="False" Toggled="SwVerPassword_Toggled"/>
+
+
+        <Button x:Name="BtnIngresar" Text="𝙇𝙊𝙂𝙄𝙉" BackgroundColor="Green" TextColor="White" Clicked="BtnIngresar_Clicked" Margin="0, 5 , 0, 15 "/>
+        <Button x:Name="BtnSignUp" Text="𝙎𝙄𝙉𝙂 𝙐𝙋"  Clicked="BtnSignUp_Clicked" Margin="0, 5 , 0, 15" />
+        <Button x:Name="BtnRecovery" Text="𝗥𝗘𝗖𝗢𝗩𝗘𝗥𝗬 𝗣𝗔𝗦𝗦𝗪𝗢𝗥𝗗" Margin="0, 5 , 0, 15"  Clicked="BtnRecovery_Clicked_1" />
+
+        <Label x:Name="LblPasswordRecovery" Text="Password Recovery...">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+            </Label.GestureRecognizers>
+        </Label>
+    </VerticalStackLayout>
+</ContentPage>

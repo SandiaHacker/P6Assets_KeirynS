@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P6Assets_KeirynS.Views.LoginOptions"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="logindep">
+
+    <VerticalStackLayout>
+        <Image x:Name="profile" Source="profileicon" HeightRequest="150" />
+
+        <Entry x:Name="TxtMyDepartament" Margin="0,30,0,10" Placeholder="My Departament is" Keyboard="Email" FontSize="25"/>
+        <Editor x:Name="TxtInf" Placeholder="Important information about my department" Margin="0,5,0,5" TextColor="WhiteSmoke" HeightRequest="100" />
+
+        <Button x:Name="BtnSave" Text="𝙎𝘼𝙑𝙀 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉" BackgroundColor="Green" Margin="0,30,0,0" />
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
